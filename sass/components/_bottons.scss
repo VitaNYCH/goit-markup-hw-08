@@ -1,0 +1,77 @@
+.btn-secondary{
+    @extend %button;  
+}
+
+.btn-secondary:focus {
+    color: $primary-white-color;
+    background-color: $bcground-accent-color;
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
+}
+
+.button__primary {
+    @extend %button;
+    min-width: 216px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    color: $primary-white-color;
+    background-color: $bcground-accent-color;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+
+.exit-btn {
+    position: absolute;
+    @include centeredFlex();
+    justify-content: center;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+
+    transform: translate();
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    background:$bcg-white-color;
+
+    &:hover {
+    color: $accent-color;
+}
+}
+.exit-btn__icon {
+    fill: currentColor
+}
+.btn-submit {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    padding: 10px 52px;
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+    color: $primary-white-color;
+    background: $bcground-accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,55 @@
+.end-page {
+    @include padding(60px, 60px);
+    background-color: #2F303A;
+}
+.end-page__list{
+    @extend %list;
+}
+.end-page__info {
+    display: flex;
+    align-items: baseline;
+}
+
+.end-page__post-office {
+
+    margin-top: 20px;
+    margin-bottom: 9px;
+    color: $primary-white-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.end-page__email {
+    margin-bottom: 9px;
+}
+.end-page__item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: #ACACB0;
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+}
+}
+.end-page__join {
+    margin-left: 70px;
+}
+
+.end-page__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+}

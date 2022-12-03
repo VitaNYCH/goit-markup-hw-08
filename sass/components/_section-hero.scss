@@ -1,0 +1,30 @@
+.hero {
+    background-color: #2F303A;
+    text-align: center;
+    @include padding(200px, 200px);
+    margin: 0 auto;
+}
+/* overlay */
+.hero--overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url('../images/bcgpicture.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 32px;
+
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+
+    color: $primary-white-color;
+}

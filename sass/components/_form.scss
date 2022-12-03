@@ -1,0 +1,147 @@
+.form {
+    @include centeredFlex();
+    flex-direction: column;
+    justify-content: center;
+}
+.form__list {
+    width: 448px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.form__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+}
+
+.form__label {
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $secondary-text-color;
+}
+
+.form__box {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    position: absolute;
+}
+
+.form__check-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 4px;
+
+    .form__box:checked+& {
+        border-color: $bcground-accent-color;
+        background-color: $bcground-accent-color;
+        background-image: url("../images/check.svg");
+        background-size: contain;
+        background-origin: border-box;
+    }
+
+}
+.form__box:checked +.form__check-icon {
+    border-color: $bcground-accent-color;
+    background-color: $bcground-accent-color;
+    background-image: url("../images/check.svg");
+    background-size: contain;
+    background-origin: border-box;
+}
+
+
+.form__check {
+    @include centeredFlex();
+    margin-bottom: 30px;
+    padding: 0;
+    margin-left: 8px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-color;
+}
+
+.form__input {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    height: 40px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.form__textarea:focus,
+.form__input:focus {
+    outline: 1px solid #2196F3;
+    cursor: pointer;
+}
+
+
+.form__element {
+    position: absolute;
+    top: 75%;
+    left: 12px;
+    transform: translateY(-75%);
+
+    width: 18px;
+    height: 18px;
+    color: $primary-text-color;
+    .form__check-icon+& {
+            color: $accent-color;
+        }
+    .form__input:focus+& {
+             color: $accent-color ;
+         }
+}
+
+
+.form__textarea {
+    width: 448px;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form__text {
+    margin: 0;
+    margin-right: 9px;
+}
+
+.form__link {
+    color: $accent-color;
+}
+
+.form__icon {
+    fill: currentColor;
+}
+

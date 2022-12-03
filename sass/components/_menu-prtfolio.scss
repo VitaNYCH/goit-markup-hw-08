@@ -1,0 +1,24 @@
+.section {
+   @include padding();
+}
+.portfolio__menu--visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.portfolio__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.portfolio__item:not(:last-child) {
+    margin-right: 8px;
+}
