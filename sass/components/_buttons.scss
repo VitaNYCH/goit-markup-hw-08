@@ -75,3 +75,19 @@
     background: $bcground-accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.menu-btn{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.menu-btn__menu{
+    display: none;
+}
+.menu-btn.is-open .menu-btn__menu{
+    display: block;
+}
+.menu-btn.is-open .menu-btn__close {
+    display: none;
+}

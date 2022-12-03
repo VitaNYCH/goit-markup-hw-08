@@ -1,6 +1,9 @@
 .section-work {
     padding: 0;
     padding-bottom: 94px;
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
 
 .section-work__title {
