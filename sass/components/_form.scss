@@ -4,7 +4,8 @@
     justify-content: center;
 }
 .form__list {
-    width: 448px;
+    width: 370px;
+    // width: 448px;
     margin: 0 auto;
     padding: 0;
 }
@@ -63,13 +64,16 @@
 
 .form__check {
     @include centeredFlex();
+
     margin-bottom: 30px;
     padding: 0;
-    margin-left: 8px;
+    // margin-left: 8px;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+    // font-size: 14px;
+    // line-height: 1.71;
     letter-spacing: 0.03em;
 
     color: $secondary-text-color;
@@ -117,7 +121,8 @@
 
 
 .form__textarea {
-    width: 448px;
+    width: 370px;
+    // width: 448px;
     height: 120px;
     padding: 12px 16px;
     resize: none;
