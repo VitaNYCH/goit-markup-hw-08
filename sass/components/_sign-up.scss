@@ -1,10 +1,12 @@
 .sign-up {
+    text-align: center;
     // margin-left: 93px;
 }
 
 .sign-up__name {
     margin: 0;
     padding: 0;
+    margin-top: 60px;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -22,9 +24,10 @@
 
 .subscribe__window {
     position: relative;
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 16px;
@@ -36,15 +39,18 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    // width: 358px;
 }
 
 .subscribe__btn {
     @include centeredFlex();
+    justify-content: center;
     text-align: center;
     width: 200px;
     height: 50px;
     padding: 10px 28px;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 700;
     font-size: 16px;
@@ -57,6 +63,7 @@
     color: $primary-white-color;
     background: $bcground-accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    // margin-left: 12px;
 }
 
 .subscribe__icon {

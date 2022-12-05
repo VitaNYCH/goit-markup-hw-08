@@ -7,7 +7,11 @@
 }
 .end-page__info {
     // display: flex;
-    align-items: baseline;
+    // align-items: baseline;
+}
+.end-page__meta{
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .end-page__post-office {
@@ -39,7 +43,8 @@
 }
 }
 .end-page__join {
-    margin-left: 70px;
+    text-align: center;
+    // margin-left: 70px;
 }
 
 .end-page__title {

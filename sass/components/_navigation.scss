@@ -4,6 +4,9 @@
         display: flex;
         margin-right: 50px;
 }
+ @media screen and(min-width: 1200px) {
+     margin-right: 305px;
+ }
 }
 .main-nav {
     @include centeredFlex();
