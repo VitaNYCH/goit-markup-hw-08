@@ -83,6 +83,14 @@
   color: #2196F3;
 }
 
+@media screen and (min-width: 767px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,15 +98,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  min-width: 768px;
 }
-
 .main-nav__menu {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 767px) {
+  .main-nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    margin: 0;
+  }
 }
 .main-nav__menu.is-open {
   display: block;
@@ -109,7 +123,6 @@
 @media screen and (max-width: 767px) {
   .main-nav__menu {
     display: none;
-    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -118,9 +131,8 @@
 }
 @media screen and (min-width: 767px) {
   .main-nav__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -138,6 +150,43 @@
   color: #2196F3;
   cursor: pointer;
 }
+@media screen and (min-width: 767px) {
+  .site-nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .site-nav__link--current {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
+  .site-nav__link--current::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+  }
+}
 
 .site-nav__item {
   margin-bottom: 32px;
@@ -146,8 +195,25 @@
   margin-bottom: 306px;
 }
 
+@media screen and (min-width: 767px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .site-nav__item:first-child {
+    margin-left: 88px;
+  }
+}
+
 .contact {
   margin-left: auto;
+}
+@media screen and (min-width: 767px) {
+  .contact {
+    margin-right: 15px;
+  }
 }
 
 .contact__item:not(:last-child) {
@@ -858,9 +924,6 @@
 }
 
 .end-page__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -907,10 +970,6 @@
   color: #FFFFFF;
 }
 
-.sign-up {
-  margin-left: 93px;
-}
-
 .sign-up__name {
   margin: 0;
   padding: 0;
@@ -921,12 +980,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-.subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .subscribe__window {
@@ -990,21 +1043,40 @@
   margin-top: 64px;
   color: #2196F3;
 }
+@media screen and (min-width: 767px) {
+  .social-media {
+    display: none;
+  }
+}
+
+.social-media__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  position: relative;
+}
 
 .social-media__item:not(:last-child) {
   margin-right: 20px;
 }
 
-.social-media__item::before {
+.social-media__item:nth-child(n+2)::after {
   content: "";
   display: block;
+  position: absolute;
   background-color: rgba(33, 33, 33, 0.2);
   width: 22px;
   height: 1px;
+  top: 90%;
+  left: -10%;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  margin-right: 10px;
-  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
