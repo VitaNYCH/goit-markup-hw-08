@@ -1,7 +1,5 @@
 .contact {
     @extend %list;
-    // display: flex;
-   
     margin-left: auto;
     @media screen and(min-width: 767px){
     display:flex;

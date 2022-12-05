@@ -26,8 +26,8 @@
 
 .section-features__list {
     @extend %list;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
 }
 
 .section-features__item {
@@ -41,8 +41,10 @@
 .section-features__icon {
     @include centeredFlex();
     justify-content: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
+    // width: 270px;
+   
     background-color:$bcground-secondary-white-color;
     margin-bottom: 30px;
     border-radius: 4px
