@@ -4,25 +4,37 @@
    
     margin-left: auto;
     @media screen and(min-width: 767px){
-        margin-right: 15px;
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-right: 15px;
     }
 }
 .contact__item:not(:last-child) {
     
     margin-right: 30px;
     margin-bottom: 32px;
-    @media screen and(min-width: 767px){
+    @media screen and(min-width: 767px) {
+        margin: 0;
+    }
+}
+.contact__item:last-child{
+    @media screen and(min-width: 767px) {
         margin: 0;
         margin-bottom: 10px;
     }
+    }
 
-}
 .contact__item--mobile-size {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17;
     
     letter-spacing: 0.02em;
+    @media screen and(min-width: 767px){
+        font-size: 12px;
+    }
  }
  .contact__item--mail-size{
     font-weight: 500;
@@ -52,7 +64,4 @@
 .contact__icon {
     fill: currentColor;
     margin-right: 10px;
-}
-@media screen and (min-width: 767px){
-
 }
