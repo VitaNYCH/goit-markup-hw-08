@@ -1,17 +1,37 @@
 .end-page {
     @include padding(60px, 60px);
     background-color: #2F303A;
+
 }
 .end-page__list{
     @extend %list;
 }
 .end-page__info {
-    // display: flex;
-    // align-items: baseline;
+    @media screen and (min-width: 1200px){
+     display: flex;
+     align-items: baseline;
+    }
+}
+.end-page__data{
+@media screen and(min-width: 767px){
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 0;
+}
 }
 .end-page__meta{
     text-align: center;
     margin-bottom: 60px;
+    @media screen and(min-width: 767px)  {
+        margin-right: 165px;
+        margin-bottom: 0;
+    }
+  @media screen and (min-width: 1200px){
+    text-align: start;
+    margin: 0;
+
+  }
 }
 
 .end-page__post-office {
@@ -44,7 +64,11 @@
 }
 .end-page__join {
     text-align: center;
-    // margin-left: 70px;
+
+    @media screen and (min-width: 1200px){
+    margin-left: 94px;
+    }
+
 }
 
 .end-page__title {

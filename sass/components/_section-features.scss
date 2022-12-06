@@ -1,6 +1,9 @@
 .section-features {
     @include padding(60px, 60px);
-    // @include padding();
+    @media screen and (min-width: 1200px){
+    @include padding();
+    }
+    
 }
 
 .section-features__title--visually-hidden {
@@ -46,6 +49,10 @@
     width: 354px;
     margin: 0;
 }
+@media screen and (min-width: 1200px){
+    width: 270px;
+    margin-right: 30px;
+}
    &:nth-child(2n+1){
     @media screen and (min-width: 767px) {
         margin-right: 30px;
@@ -59,11 +66,13 @@
     &:not(:last-child){
     margin-bottom: 30px;
     }
-    // width: 270px;
-    // margin-right: 30px;
-    // &:nth-child(4) {
-    //     margin-right: 0;
-    // }
+    
+    &:nth-child(4) {
+    @media screen and (min-width: 1200px) {
+    margin-right: 0;
+        }
+      
+    }
 }
 
 .section-features__icon {
@@ -75,7 +84,9 @@
     @media screen and (min-width: 767px) {
       width: 354px;
     }
-    // width: 270px;
+     @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
    
     background-color:$bcground-secondary-white-color;
     margin-bottom: 30px;

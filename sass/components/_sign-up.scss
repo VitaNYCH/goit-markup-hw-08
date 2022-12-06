@@ -1,6 +1,12 @@
 .sign-up {
     text-align: center;
-    // margin-left: 93px;
+    @media screen and(min-width: 767px) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width:1200px){
+    margin-left: 93px;
+    margin-top: 0;
+    }
 }
 
 .sign-up__name {
@@ -8,6 +14,10 @@
     padding: 0;
     margin-top: 60px;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px){
+        margin-top: 0;
+        text-align: start;
+    }
 
     font-weight: 700;
     font-size: 14px;
@@ -19,7 +29,10 @@
 }
 
 .subscribe {
-    // display: flex;
+    @media screen and (min-width:1200px) {
+    display: flex;
+    }
+
 }
 
 .subscribe__window {
@@ -39,7 +52,11 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    // width: 358px;
+
+@media screen and (min-width:1200px) {
+        width: 358px;
+    }
+  
 }
 
 .subscribe__btn {
@@ -63,7 +80,10 @@
     color: $primary-white-color;
     background: $bcground-accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    // margin-left: 12px;
+
+    @media screen and (min-width:1200px) {
+        margin-left: 12px;
+    }
 }
 
 .subscribe__icon {
