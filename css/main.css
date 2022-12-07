@@ -754,6 +754,12 @@
   }
 }
 
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .section-team__name {
   text-align: center;
 }
