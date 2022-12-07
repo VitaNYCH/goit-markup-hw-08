@@ -15,9 +15,11 @@
     @extend %list;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
-
     margin-bottom: 50px;
+    @media screen and (min-width: 767px) {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
 }
 
 .portfolio__item:not(:last-child) {

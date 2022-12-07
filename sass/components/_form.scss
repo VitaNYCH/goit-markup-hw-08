@@ -5,9 +5,12 @@
 }
 .form__list {
     width: 370px;
-    // width: 448px;
+ 
     margin: 0 auto;
     padding: 0;
+    @media screen and (min-width: 767px){
+    width: 448px;
+    }
 }
 
 .form__item {
@@ -67,16 +70,20 @@
 
     margin-bottom: 30px;
     padding: 0;
-    // margin-left: 8px;
+  
 
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    // font-size: 14px;
-    // line-height: 1.71;
+    
     letter-spacing: 0.03em;
 
     color: $secondary-text-color;
+    @media screen and(min-width: 767px){
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    }
 }
 
 .form__input {
@@ -122,7 +129,7 @@
 
 .form__textarea {
     width: 370px;
-    // width: 448px;
+   
     height: 120px;
     padding: 12px 16px;
     resize: none;
@@ -135,6 +142,9 @@
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    @media screen and (min-width: 767px){
+    width: 448px;
+    }
 }
 
 .form__text {

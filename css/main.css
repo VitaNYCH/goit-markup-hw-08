@@ -120,6 +120,7 @@
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 1;
 }
 @media screen and (min-width: 767px) {
   .main-nav__menu {
@@ -344,13 +345,47 @@
 
 /* overlay */
 .hero--overlay {
-  max-width: 1600px;
-  height: 600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcgpicture.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcgpicture.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .hero--overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcg-mobile-1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg-mobile-1x.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 480px) {
+  .hero--overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcg-mobile-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg-mobile-2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero--overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcg-tablet-1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg-tablet-1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .hero--overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcg-tablet-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcg-tablet-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero--overlay {
+    max-width: 1600px;
+    height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcgpicture.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcgpicture.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero--overlay .hero--overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bcgpicture-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bcgpicture-2x.jpg");
+  }
 }
 
 .hero__title {
@@ -452,7 +487,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (min-width: 767px) {
   .menu-btn {
@@ -970,7 +1005,7 @@ img {
 @media screen and (min-width: 767px) {
   .modal {
     position: absolute;
-    top: 75%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
@@ -981,6 +1016,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
+    max-height: 581px;
   }
 }
 
@@ -1014,6 +1050,11 @@ img {
   width: 370px;
   margin: 0 auto;
   padding: 0;
+}
+@media screen and (min-width: 767px) {
+  .form__list {
+    width: 448px;
+  }
 }
 
 .form__item {
@@ -1082,6 +1123,13 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
+@media screen and (min-width: 767px) {
+  .form__check {
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .form__input {
   margin: 0;
@@ -1131,6 +1179,11 @@ img {
   color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 767px) {
+  .form__textarea {
+    width: 448px;
+  }
 }
 
 .form__text {
