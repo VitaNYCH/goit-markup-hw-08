@@ -617,6 +617,12 @@
   border: 1px solid #EEEEEE;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .content-list__items:first-child > .content-list__meta {
+    padding: 42px 20px;
+  }
+}
+
 .content-list__image {
   z-index: -2;
 }
