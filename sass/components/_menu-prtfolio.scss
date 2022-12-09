@@ -1,5 +1,10 @@
 .section {
+    @media screen and (max-width: 1200px){
+    @include padding(60px, 60px);
+    }
+    @media screen and (min-width: 1200px){
    @include padding();
+    }
 }
 .portfolio__menu--visually-hidden {
     position: absolute;

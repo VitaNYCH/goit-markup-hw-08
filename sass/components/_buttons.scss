@@ -13,7 +13,7 @@
 
 .button__primary {
     @extend %button;
-    min-width: 216px;
+    min-width: 200px;
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
@@ -53,6 +53,7 @@
 
     &:hover {
     color: $accent-color;
+    
 }
 }
 .exit-btn__icon {
