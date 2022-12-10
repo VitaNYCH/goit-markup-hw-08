@@ -716,7 +716,7 @@
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .content-list__items:nth-child(2n+1) {
     margin-right: 30px;
   }
