@@ -21,9 +21,10 @@
 }
 .modal {
  
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
     padding: 40px;
+    width: 100%;
 
 
     background: $bcg-white-color;
