@@ -1,7 +1,12 @@
 .section-team {
-    @include padding(60px, 60px);
-    // @include padding();
     background-color: $bcground-secondary-white-color;
+
+    @media screen and (max-width: 1200px){
+    @include padding(60px, 60px);
+    }
+@media screen and (min-width: 1200px){
+    @include padding();
+}
 }
 
 .section-team__title {
@@ -40,7 +45,7 @@
 }
 
 .section-team__member {
-    width: 450px;
+    // width: 450px;
     height: 622px;
     margin: 0;
     @media screen and (min-width: 767px){

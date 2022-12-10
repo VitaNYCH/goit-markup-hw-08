@@ -2,7 +2,7 @@
     background-color: #2F303A;
     text-align: center;
     margin: 0 auto;
-    @include padding(116px, 60px);
+    @include padding(118px, 118px);
 
     @media screen and (min-width: 1200px){
     @include padding(200px, 200px);
@@ -75,7 +75,7 @@ screen and (min-resolution: 2dppx) {
 
     color: $primary-white-color;
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 1200px){
         font-size: 26px;
         line-height: 1.62;
         text-align: center;

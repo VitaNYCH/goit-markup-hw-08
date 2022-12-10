@@ -43,7 +43,6 @@
 }
 
 .section-features__item {
-    width: 450px;
   @media screen and (min-width: 767px) {
     width: 354px;
     margin: 0;
@@ -77,7 +76,6 @@
 .section-features__icon {
     @include centeredFlex();
     justify-content: center;
-    width: 450px;
     height: 120px;
 
     @media screen and (min-width: 767px) {

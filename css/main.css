@@ -351,8 +351,8 @@
   background-color: #2F303A;
   text-align: center;
   margin: 0 auto;
-  padding-top: 116px;
-  padding-bottom: 60px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -414,7 +414,7 @@
   letter-spacing: 0.06em;
   color: #FFFFFF;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
@@ -584,9 +584,6 @@
   }
 }
 
-.section-features__item {
-  width: 450px;
-}
 @media screen and (min-width: 767px) {
   .section-features__item {
     width: 354px;
@@ -628,7 +625,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 450px;
   height: 120px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
@@ -740,9 +736,19 @@
 }
 
 .section-team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #F5F4FA;
+}
+@media screen and (max-width: 1200px) {
+  .section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-team__title {
@@ -780,7 +786,6 @@
 }
 
 .section-team__member {
-  width: 450px;
   height: 622px;
   margin: 0;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(38, 13, 13, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -930,6 +935,13 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (max-width: 1200px) {
+  .section-clients__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .section-clients__company {
   display: -webkit-box;
@@ -943,7 +955,7 @@ img {
           justify-content: center;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 210px;
+  width: calc((100% - 60px) / 2);
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -1045,7 +1057,7 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     position: absolute;
-    top: 75%;
+    top: 60%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
@@ -1054,7 +1066,7 @@ img {
 @media screen and (min-width: 767px) {
   .modal {
     position: absolute;
-    top: 75%;
+    top: 60%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
@@ -1395,7 +1407,7 @@ img {
 
 .subscribe__window {
   position: relative;
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -1409,6 +1421,11 @@ img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 767px) {
+  .subscribe__window {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__window {
