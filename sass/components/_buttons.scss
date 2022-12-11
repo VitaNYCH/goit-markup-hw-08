@@ -84,7 +84,7 @@
     border: none;
     background-color: transparent;
     z-index: 2;
-
+    
     @media screen and (min-width: 767px){
         display: none;
     }
@@ -94,6 +94,7 @@
 }
 .menu-btn.is-open .menu-btn__menu{
     display: block;
+    
 }
 .menu-btn.is-open .menu-btn__close{
     display: none;
