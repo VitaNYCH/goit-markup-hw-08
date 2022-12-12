@@ -79,6 +79,8 @@
 }
 .menu-btn{
     display: inline-flex;
+    position: fixed;
+    right: 15px;
     margin: 0;
     padding: 0;
     border: none;
@@ -98,4 +100,8 @@
 }
 .menu-btn.is-open .menu-btn__close{
     display: none;
+    
 }
+
+// position: fixed;
+// right: 15px;

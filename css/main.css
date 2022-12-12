@@ -527,6 +527,8 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  position: fixed;
+  right: 15px;
   margin: 0;
   padding: 0;
   border: none;
