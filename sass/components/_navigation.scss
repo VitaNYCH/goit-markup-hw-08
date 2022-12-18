@@ -1,9 +1,6 @@
 .site-nav {
     @extend %list;
 
-    // @media screen and (max-width: 767px){
-    //     margin-bottom: 306px;
-    // }
     @media screen and (min-width: 767px) {
         display: flex;
         margin-right: 50px;
@@ -38,14 +35,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // position: absolute;
     position: fixed;
     top: 0;
     padding: 48px 40px;
-    // width: 100%;
     width: 100vw;
     height: 100vh;
-    // max-height: 796px;
 }
     @media screen and (max-width: 767px) {
     display: none;
@@ -91,6 +85,8 @@
     }
 }
 .site-nav__link--current {
+
+    color: $accent-color;
     @media screen and (min-width: 767px){
 
     position: relative;
@@ -99,7 +95,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: $accent-color;
+    // color: $accent-color;
 
     &::after {
     content: "";
