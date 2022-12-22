@@ -88,7 +88,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 50px;
+    margin-right: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -529,7 +529,6 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: fixed;
   right: 15px;
   margin: 0;
   padding: 0;
@@ -543,16 +542,20 @@
   }
 }
 
-.menu-btn__menu {
+.menu-btn__close {
   display: none;
-}
-
-.menu-btn.is-open .menu-btn__menu {
-  display: block;
 }
 
 .menu-btn.is-open .menu-btn__close {
+  display: block;
+}
+
+.menu-btn.is-open .menu-btn__menu {
   display: none;
+}
+
+.menu-btn.is-open {
+  position: fixed;
 }
 
 .section-features {

@@ -79,7 +79,6 @@
 }
 .menu-btn{
     display: inline-flex;
-    position: fixed;
     right: 15px;
     margin: 0;
     padding: 0;
@@ -91,17 +90,20 @@
         display: none;
     }
 }
-.menu-btn__menu{
+.menu-btn__close{
     display: none;
+
 }
-.menu-btn.is-open .menu-btn__menu{
-    display: block;
-    
-}
-.menu-btn.is-open .menu-btn__close{
-    display: none;
-    
+    .menu-btn.is-open .menu-btn__close{
+        display: block;
+
+    }
+    .menu-btn.is-open .menu-btn__menu{
+        display: none;
+    }
+
+.menu-btn.is-open{
+    position: fixed;
 }
 
-// position: fixed;
-// right: 15px;
+
